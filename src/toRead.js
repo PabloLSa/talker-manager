@@ -1,6 +1,6 @@
 const fileSystem = require('fs').promises;
 
-// Adicione uma linha em branco aqui
+// Adicione duas linhas em branco aqui
 const toRead = async (path) => {
   try { 
     const file = await fileSystem.readFile(path);
@@ -12,3 +12,6 @@ const toRead = async (path) => {
 };
 
 module.exports = toRead;
+
+
+
