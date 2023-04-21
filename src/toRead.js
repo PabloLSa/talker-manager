@@ -12,6 +12,3 @@ const toRead = async (path) => {
 };
 
 module.exports = toRead;
-
-
-
