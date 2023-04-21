@@ -8,7 +8,6 @@ const toWrite = async (path, data) => {
     });
 
     return data;
-
   } catch (erro) {
     console.error(erro.message);
     throw new Error(erro.message);
