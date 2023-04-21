@@ -1,5 +1,3 @@
-
-
 const fileSystem = require('fs').promises;
 
 const toRead = async (path) => {
