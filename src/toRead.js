@@ -11,6 +11,6 @@ const toRead = async (path) => {
     throw new Error(erro.message);
   }
 
-}
+};
 
 module.exports = toRead;

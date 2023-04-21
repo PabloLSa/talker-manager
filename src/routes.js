@@ -6,4 +6,4 @@ const routers = express.Router();
 
 routers.get('/', async (_req, res) => res.status(200).json(await dataGet(path)));
 
-module.exports  = routers;
+module.exports = routers;
