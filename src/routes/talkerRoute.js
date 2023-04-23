@@ -1,6 +1,6 @@
 const express = require('express');
-const dataGet = require('./dataGet');
-const { path } = require('./path');
+const dataGet = require('../dataGet');
+const { path } = require('../path');
 
 const routers = express.Router();
 
