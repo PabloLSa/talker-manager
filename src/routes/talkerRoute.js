@@ -21,6 +21,15 @@ routers.get('/:id', async (req, res) => {
   res.status(200).json(talker);
 });
 
+routers.delete('/:id',
+authorization,
+async (req, res) => {
+const { id } = req.params;
+const deleteId = await dataGet(path);
+const IdDelete = deleteId.filter((talker) => talker.id !== Number(id));
+await toWrite(path, IdDelete);
+return res.status(204).end();
+});
 routers.put('/:id', 
 authorization, 
 nameValidation, 
