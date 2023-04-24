@@ -1,3 +1,3 @@
 const path = './src/talker.json';
 
-module.exports = { path };
+module.exports = path; 
