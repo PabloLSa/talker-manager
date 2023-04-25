@@ -13,6 +13,13 @@ const routers = express.Router();
 
 routers.get('/', async (_req, res) => res.status(200).json(await dataGet(path)));
 
+routers.get('/search', authorization, async (req, res) => {
+  const { q } = req.query;
+ const searchTalker = await dataGet(path);
+ const TalkerSearch = searchTalker.filter((tk) => tk.name.includes(q));
+ return res.status(200).json(TalkerSearch);
+});
+
 routers.get('/:id', async (req, res) => {
   const { id } = req.params;
   const talkers = await dataGet(path);
